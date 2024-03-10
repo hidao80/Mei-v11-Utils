@@ -1,0 +1,57 @@
+{
+    "app_name": {
+        "message": "Mei v11 Utility"
+    },
+    "app_desc": {
+        "message": "A collection of UserScripts that enhance the web client experience for Mei v11."
+    },
+    "BuiltinMasumisuSearchforMisskeyDev_name": {
+        "message": "Use Masmis Search for search"
+    },
+    "FediverseTextBlur_name": {
+        "message": "Text blur"
+    },
+    "FediverseTimeToAbsolute_name": {
+        "message": "Add absolute timestamps"
+    },
+    "MeiV11EmojisPaletteForMovileTextArea_name": {
+        "message": "Emoji palette for mobile text area"
+    },
+    "MisskeyDifferentColorLocalOnly_name": {
+        "message": "Use a different color for the \"Local only\" post scope icon"
+    },
+    "MisskeyFediverseTicker_name": {
+        "message": "Fediverse ticker"
+    },
+    "MisskeyKeywordsFilter_name": {
+        "message": "Keyword filter"
+    },
+    "MisskeyNotesSpeech_name": {
+        "message": "Read notes with Text-to-Speech"
+    },
+    "MisskeyReactionViewForTouchDevices_name": {
+        "message": "View users who reacted"
+    },
+    "MisskeyV11AddPostButtonAtBottom_name": {
+        "message": "Add a new post button"
+    },
+    "MisskeyV11BackToTop_name": {
+        "message": "Add a back to top button"
+    },
+    "MisskeyV11CustomEmojiRender_name": {
+        "message": "Reload custom emojis (Misskey.dev only)"
+    },
+    "MisskeyV11ReactionPickerExpandWidth_name": {
+        "message": "Display the reaction picker at the bottom of the screen (for mobile mode)"
+    },
+    "MisskeyV11RemoteCustomEmojiMarker_name": {
+        "message": "Make remote custom emojis stand out"
+    },
+    "MisskeyV11SendWithCtrlEnterForMobileMode_name": {
+        "message": "Send with Ctrl+Enter (for mobile mode)"
+    },
+
+    "controll_panel_title": {
+        "message": "Control Panel | Mei v11 Utility"
+    }
+}

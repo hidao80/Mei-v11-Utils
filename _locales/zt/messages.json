@@ -1,0 +1,57 @@
+{
+    "app_name": {
+        "message": "美V11工具"
+    },
+    "app_desc": {
+        "message": "一系列增強美V11 Web客戶端體驗的使用者腳本。"
+    },
+    "BuiltinMasumisuSearchforMisskeyDev_name": {
+        "message": "使用 Masumisu 搜索進行搜索"
+    },
+    "FediverseTextBlur_name": {
+        "message": "文字模糊"
+    },
+    "FediverseTimeToAbsolute_name": {
+        "message": "添加絕對時間戳"
+    },
+    "MeiV11EmojisPaletteForMovileTextArea_name": {
+        "message": "行動裝置文本區域的表情符號調色板"
+    },
+    "MisskeyDifferentColorLocalOnly_name": {
+        "message": "為“僅本地”帖子範圍圖示使用不同的顏色"
+    },
+    "MisskeyFediverseTicker_name": {
+        "message": "Fediverse 行情"
+    },
+    "MisskeyKeywordsFilter_name": {
+        "message": "關鍵字過濾器"
+    },
+    "MisskeyNotesSpeech_name": {
+        "message": "使用文字轉語音朗讀筆記"
+    },
+    "MisskeyReactionViewForTouchDevices_name": {
+        "message": "查看已反應的使用者"
+    },
+    "MisskeyV11AddPostButtonAtBottom_name": {
+        "message": "添加新的帖子按鈕"
+    },
+    "MisskeyV11BackToTop_name": {
+        "message": "添加返回頂部按鈕"
+    },
+    "MisskeyV11CustomEmojiRender_name": {
+        "message": "重新載入自定義表情符號（僅限 Misskey.dev）"
+    },
+    "MisskeyV11ReactionPickerExpandWidth_name": {
+        "message": "在螢幕底部顯示表情符號選擇器（用於行動模式）"
+    },
+    "MisskeyV11RemoteCustomEmojiMarker_name": {
+        "message": "使遠端自定義表情符號脫穎而出"
+    },
+    "MisskeyV11SendWithCtrlEnterForMobileMode_name": {
+        "message": "使用 Ctrl+Enter 發送（用於行動模式）"
+    },
+
+    "controll_panel_title": {
+        "message": "控制面板 | 美V11工具"
+    }
+}

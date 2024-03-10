@@ -1,0 +1,49 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_app_name__",
+    "version": "1.0.0",
+    "description": "__MSG_app_desc__",
+    "default_locale": "en",
+    "homepage_url": "https://github.com/hidao80/Mei-v11-Utils/",
+    "icons": {
+        "48": "img/icon48.png"
+    },
+    "action": {
+        "default_title": "__MSG_controll_panel_title__",
+        "default_icon": "img/icon48.png",
+        "default_popup": "html/controll_panel.html"
+    },
+    "content_scripts": [
+        {
+            "run-at": "document_end",
+            "matches": [
+                "https://misskey.m544.net/*",
+                "https://meisskey.one/*",
+                "https://misskey.dev/*"
+            ],
+            "js": [
+                "./js/BuiltinMasumisuSearchforMisskeyDev.user.js",
+                "./js/FediverseTextBlur.user.js",
+                "./js/FediverseTimeToAbsolute.user.js",
+                "./js/MeiV11EmojisPaletteForMovileTextArea.user.js",
+                "./js/MisskeyDifferentColorLocalOnly.user.js",
+                "./js/MisskeyFediverseTicker.user.js",
+                "./js/MisskeyKeywordsFilter.user.js",
+                "./js/MisskeyNotesSpeech.user.js",
+                "./js/MisskeyReactionViewForTouchDevices.user.js",
+                "./js/MisskeyV11AddPostButtonAtBottom.user.js",
+                "./js/MisskeyV11BackToTop.user.js",
+                "./js/MisskeyV11CustomEmojiRender.user.js",
+                "./js/MisskeyV11ReactionPickerExpandWidth.user.js",
+                "./js/MisskeyV11RemoteCustomEmojiMarker.user.js",
+                "./js/MisskeyV11SendWithCtrlEnterForMobileMode.user.js",
+                "./js/app.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ]
+}

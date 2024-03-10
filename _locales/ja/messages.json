@@ -1,0 +1,57 @@
+{
+    "app_name": {
+        "message": "めいv11ユーティリティ"
+    },
+    "app_desc": {
+        "message": "めいv11のWebクライアントを快適にするUserScriptをひとまとめにしたものです。"
+    },
+    "BuiltinMasumisuSearchforMisskeyDev_name": {
+        "message": "検索をますみすサーチで行う"
+    },
+    "FediverseTextBlur_name": {
+        "message": "テキストぼかし"
+    },
+    "FediverseTimeToAbsolute_name": {
+        "message": "絶対時刻表示の追加"
+    },
+    "MeiV11EmojisPaletteForMovileTextArea_name": {
+        "message": "モバイル用テキストエリアの絵文字パレット"
+    },
+    "MisskeyDifferentColorLocalOnly_name": {
+        "message": "「ローカルのみ」の投稿範囲アイコンに違う色を付ける"
+    },
+    "MisskeyFediverseTicker_name": {
+        "message": "fediverseティッカー"
+    },
+    "MisskeyKeywordsFilter_name": {
+        "message": "キーワードフィルター"
+    },
+    "MisskeyNotesSpeech_name": {
+        "message": "投稿をText-to-Speechで読み上げる"
+    },
+    "MisskeyReactionViewForTouchDevices_name": {
+        "message": "リアクションしたユーザーの確認"
+    },
+    "MisskeyV11AddPostButtonAtBottom_name": {
+        "message": "新規投稿ボタンを追加"
+    },
+    "MisskeyV11BackToTop_name": {
+        "message": "先頭に戻るボタン追加"
+    },
+    "MisskeyV11CustomEmojiRender_name": {
+        "message": "カスタム絵文字の読み込み直し（Misskey.dev専用）"
+    },
+    "MisskeyV11ReactionPickerExpandWidth_name": {
+        "message": "リアクションパレットを画面下部に表示させる（モバイル版モード用）"
+    },
+    "MisskeyV11RemoteCustomEmojiMarker_name": {
+        "message": "リモートカスタム絵文字を目立つようにする"
+    },
+    "MisskeyV11SendWithCtrlEnterForMobileMode_name": {
+        "message": "Ctrl+Enterで送信する（モバイル版モード用）"
+    },
+
+    "controll_panel_title": {
+        "message": "コントロールパネル | めいv11ユーティリティ"
+    }
+}

@@ -1,0 +1,119 @@
+// ==UserScript==
+// @name           Builtin Masmis-Search for Misskey.dev
+// @description    Search for posts on Misskay.dev using Masmis-search.
+// @name:ja        ますみすサーチ内蔵 for Misskey.dev
+// @description:ja ますみすサーチでMisskay.devの投稿を検索することができます。
+// @match          https://misskey.dev/*
+// @match          http://hidao-hm90.local/*
+// @author         hidao80
+// @version        1.7.3
+// @namespace      https://github.com/hidao80/UserScript/BuiltinMasumisuSearchforMisskeyDev
+// @icon           https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f50d.png
+// @license        MIT
+// @run-at         document-end
+// @grant          none
+// @updateURL      https://github.com/hidao80/UserScript/raw/main/src/Misskey/BuiltinMasumisuSearchforMisskeyDev/BuiltinMasumisuSearchforMisskeyDev.user.js
+// @downloadURL    https://github.com/hidao80/UserScript/raw/main/src/Misskey/BuiltinMasumisuSearchforMisskeyDev/BuiltinMasumisuSearchforMisskeyDev.user.js
+// ==/UserScript==
+
+// Twitter Emoji (Twemoji)
+// License
+//   Copyright 2019 Twitter, Inc and other contributors
+//   Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/
+//   https://github.com/twitter/twemoji/blob/master/LICENSE-GRAPHICS
+
+'use strict';
+async function BuiltinMasumisuSearchforMisskeyDev(isRun) {
+    if (!isRun) return;
+    // When debugging: DEBUG = !false;
+    const DEBUG = false;
+    /** Suppress debug printing unless in debug mode */
+    const console = {};
+    ["log", "debug", "warn", "info", "error"].map((o => { console[o] = DEBUG ? window.console[o] : function () { } }));
+    const SCRIPT_NAME = 'BuiltinMasumisuSearchforMisskeyDev';
+    const HASH = ((s = SCRIPT_NAME)=>{var t=s.split("").map(v => {t=37*t+v.charCodeAt(0)});"h"+t.toString(16).replace(/0+$/,"")})();
+    /** indolence.js */
+    const $$new=e=>document.createElement(e);
+    const $$one=e=>document.querySelector(e);
+    const $$all=e=>document.querySelectorAll(e);
+
+    /** Main */
+    /**
+     * Open a separate window for search and search in Masumisu-search.
+     * @param {*} query search string
+     */
+    function search(query) {
+        open(`https://masmis-search.ja-jp.org/search?q=account.domain:${location.host}+${encodeURIComponent(query)}`, 'misskey2masumisu');
+    }
+
+    /**
+     * User search or not
+     * @param {*} query search string
+     * @returns {bool}
+     */
+    function isNotNotesSearch(query) {
+        return /^\s*@.*/.test(query) || /^\s*#.*/.test(query) || /^\s*https?:\/\/.*/.test(query);
+    }
+
+    /**
+     * Override the search window execution event whenever something is drawn on the screen.
+     * If the flag has already been overwritten, nothing is done.
+     */
+    async function MasmisSearch() {
+        // Get locale-specific "search" string from local storage
+        const labelSearch = JSON.parse(localStorage.getItem('locale')).common?.search;
+        const dialogTitle = $$one(".modal.modal header")?.textContent;
+        console.debug(`labelSearch: ${labelSearch}, dialogTitle: ${dialogTitle}`);
+
+        const desktopModeSearchForm = $$one("input[type=search]");
+        const MobileModeSearchForm = $$one("[class=input]>input");
+        const input = desktopModeSearchForm || labelSearch == dialogTitle && MobileModeSearchForm;
+
+        if (input) {
+            input.addEventListener("change", (e) => {
+                // For user search, do not use Masumisu Search.
+                if (!isNotNotesSearch(input.value)) {
+                    e.stopImmediatePropagation();
+                    e.stopPropagation();
+                    search(input.value);
+
+                    // Close the search dialog when in mobile version mode
+                    $$one("div[class='bg']")?.click();
+                }
+            }, true);
+
+            // Disable search events
+            input.addEventListener("search", (e) => {
+                // For user search, do not use Masumisu Search.
+                if (!isNotNotesSearch(input.value)) {
+                    e.stopImmediatePropagation();
+                    e.stopPropagation();
+                }
+            }, true);
+            // Disable keydown events
+            input.addEventListener("keydown", (e) => {
+                // For user search, do not use Masumisu Search.
+                if (!isNotNotesSearch(input.value)) {
+                    e.stopImmediatePropagation();
+                    e.stopPropagation();
+                }
+            }, true);
+            // Disable submit events
+            $$one("form")?.addEventListener("submit", (e) => {
+                // For user search, do not use Masumisu Search.
+                if (!isNotNotesSearch(input.value)) {
+                    e.stopImmediatePropagation();
+                    e.stopPropagation();
+                }
+            }, true);
+            input.dataset.isSearchDisabled = true;
+        }
+    }
+
+    // Watch for the submit text area to be drawn.
+    setTimeout(() => {
+        new MutationObserver(MasmisSearch).observe(document.body, {
+            childList: true,
+        });
+    }, 1_500);
+};

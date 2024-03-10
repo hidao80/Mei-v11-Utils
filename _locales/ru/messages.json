@@ -1,0 +1,57 @@
+{
+    "app_name": {
+        "message": "Утилита MeiV11"
+    },
+    "app_desc": {
+        "message": "Это набор UserScripts, которые улучшают работу веб-клиента для MeiV11."
+    },
+    "BuiltinMasumisuSearchforMisskeyDev_name": {
+        "message": "Использовать поиск Masumisu"
+    },
+    "FediverseTextBlur_name": {
+        "message": "Размытие текста"
+    },
+    "FediverseTimeToAbsolute_name": {
+        "message": "Добавить абсолютную метку времени"
+    },
+    "MeiV11EmojisPaletteForMovileTextArea_name": {
+        "message": "Палитра эмодзи для мобильной области текста"
+    },
+    "MisskeyDifferentColorLocalOnly_name": {
+        "message": "Использовать другой цвет для значка области публикации \"Только локально\""
+    },
+    "MisskeyFediverseTicker_name": {
+        "message": "Лента Fediverse"
+    },
+    "MisskeyKeywordsFilter_name": {
+        "message": "Фильтр ключевых слов"
+    },
+    "MisskeyNotesSpeech_name": {
+        "message": "Читать заметки с помощью Text-to-Speech"
+    },
+    "MisskeyReactionViewForTouchDevices_name": {
+        "message": "Просматривать пользователей, которые отреагировали"
+    },
+    "MisskeyV11AddPostButtonAtBottom_name": {
+        "message": "Добавить кнопку для создания новой публикации"
+    },
+    "MisskeyV11BackToTop_name": {
+        "message": "Добавить кнопку \"Наверх\""
+    },
+    "MisskeyV11CustomEmojiRender_name": {
+        "message": "Перезагрузить пользовательские эмодзи (только Misskey.dev)"
+    },
+    "MisskeyV11ReactionPickerExpandWidth_name": {
+        "message": "Отображать селектор реакции в нижней части экрана (для мобильного режима)"
+    },
+    "MisskeyV11RemoteCustomEmojiMarker_name": {
+        "message": "Выделить удаленные пользовательские эмодзи"
+    },
+    "MisskeyV11SendWithCtrlEnterForMobileMode_name": {
+        "message": "Отправлять с помощью Ctrl+Enter (для мобильного режима)"
+    },
+
+    "controll_panel_title": {
+        "message": "Панель управления | Утилита MeiV11"
+    }
+}

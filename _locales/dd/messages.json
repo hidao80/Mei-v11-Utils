@@ -1,0 +1,57 @@
+{
+    "app_name": {
+        "message": "Mei v11-Dienstprogramm"
+    },
+    "app_desc": {
+        "message": "Dies ist eine Sammlung von UserScripts, die die Web-Client-Erfahrung für Mei v11 verbessern."
+    },
+    "BuiltinMasumisuSearchforMisskeyDev_name": {
+        "message": "Verwenden Sie die Masumisu-Suche für die Suche"
+    },
+    "FediverseTextBlur_name": {
+        "message": "Textunschärfe"
+    },
+    "FediverseTimeToAbsolute_name": {
+        "message": "Absoluten Zeitstempel hinzufügen"
+    },
+    "MeiV11EmojisPaletteForMovileTextArea_name": {
+        "message": "Emoji-Palette für den mobilen Textbereich"
+    },
+    "MisskeyDifferentColorLocalOnly_name": {
+        "message": "Verwenden Sie eine andere Farbe für das Symbol „Nur lokal“ im Post-Bereich"
+    },
+    "MisskeyFediverseTicker_name": {
+        "message": "Fediverse-Ticker"
+    },
+    "MisskeyKeywordsFilter_name": {
+        "message": "Keyword-Filter"
+    },
+    "MisskeyNotesSpeech_name": {
+        "message": "Lies Notizen mit Text-to-Speech vor"
+    },
+    "MisskeyReactionViewForTouchDevices_name": {
+        "message": "Anzeigen der Benutzer, die reagiert haben"
+    },
+    "MisskeyV11AddPostButtonAtBottom_name": {
+        "message": "Schaltfläche zum Erstellen eines neuen Beitrags hinzufügen"
+    },
+    "MisskeyV11BackToTop_name": {
+        "message": "Schaltfläche „Zurück zum Anfang“ hinzufügen"
+    },
+    "MisskeyV11CustomEmojiRender_name": {
+        "message": "Benutzerdefinierte Emojis neu laden (nur Misskey.dev)"
+    },
+    "MisskeyV11ReactionPickerExpandWidth_name": {
+        "message": "Zeige den Reaktionspicker unten im Bildschirm an (für den mobilen Modus)"
+    },
+    "MisskeyV11RemoteCustomEmojiMarker_name": {
+        "message": "Heben Sie benutzerdefinierte Remote-Emojis hervor"
+    },
+    "MisskeyV11SendWithCtrlEnterForMobileMode_name": {
+        "message": "Mit Strg+Enter senden (für den mobilen Modus)"
+    },
+
+    "controll_panel_title": {
+        "message": "Kontrollfeld | Mei v11-Dienstprogramm"
+    }
+}

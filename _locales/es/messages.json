@@ -1,0 +1,57 @@
+{
+    "app_name": {
+        "message": "Utilidad Mei v11"
+    },
+    "app_desc": {
+        "message": "Esta es una colección de UserScripts que mejoran la experiencia del cliente web para Mei v11."
+    },
+    "BuiltinMasumisuSearchforMisskeyDev_name": {
+        "message": "Utilizar la búsqueda de Masumisu para la búsqueda"
+    },
+    "FediverseTextBlur_name": {
+        "message": "Desenfoque de texto"
+    },
+    "FediverseTimeToAbsolute_name": {
+        "message": "Agregar marca de tiempo absoluta"
+    },
+    "MeiV11EmojisPaletteForMovileTextArea_name": {
+        "message": "Paleta de emojis para el área de texto móvil"
+    },
+    "MisskeyDifferentColorLocalOnly_name": {
+        "message": "Usar un color diferente para el ícono de alcance de publicación 'Solo local'"
+    },
+    "MisskeyFediverseTicker_name": {
+        "message": "Ticker de Fediverse"
+    },
+    "MisskeyKeywordsFilter_name": {
+        "message": "Filtro de palabras clave"
+    },
+    "MisskeyNotesSpeech_name": {
+        "message": "Leer notas con Text-to-Speech"
+    },
+    "MisskeyReactionViewForTouchDevices_name": {
+        "message": "Ver usuarios que reaccionaron"
+    },
+    "MisskeyV11AddPostButtonAtBottom_name": {
+        "message": "Agregar un botón para crear una nueva publicación"
+    },
+    "MisskeyV11BackToTop_name": {
+        "message": "Agregar un botón para volver al principio"
+    },
+    "MisskeyV11CustomEmojiRender_name": {
+        "message": "Volver a cargar emojis personalizados (solo Misskey.dev)"
+    },
+    "MisskeyV11ReactionPickerExpandWidth_name": {
+        "message": "Mostrar el selector de reacciones en la parte inferior de la pantalla (para modo móvil)"
+    },
+    "MisskeyV11RemoteCustomEmojiMarker_name": {
+        "message": "Resaltar emojis personalizados remotos"
+    },
+    "MisskeyV11SendWithCtrlEnterForMobileMode_name": {
+        "message": "Enviar con Ctrl+Enter (para modo móvil)"
+    },
+
+    "controll_panel_title": {
+        "message": "Panel de control | Utilidad Mei v11"
+    }
+}
